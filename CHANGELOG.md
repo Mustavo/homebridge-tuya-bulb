@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2026-04-19
+
+### Fixed
+
+- Added `"customUi": true` to package.json — required for Homebridge Config UI X to load the bootstrap and management panels instead of falling back to the schema form
+
 ## [1.0.0] - 2026-04-19
 
 Initial release.
