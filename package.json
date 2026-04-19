@@ -1,6 +1,6 @@
 {
   "name": "homebridge-tuya-bulb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Homebridge plugin for Tuya v3.4 Color Light bulbs. Local LAN control after one-time cloud key bootstrap. No ongoing cloud dependency.",
   "main": "dist/index.js",
   "scripts": {

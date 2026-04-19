@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2] - 2026-04-19
+
+### Fixed
+
+- Moved `customUi: true` from package.json to config.schema.json (correct location per homebridge-plugin-ui-utils spec)
+- Added `customUiPath: ./homebridge-ui` to config.schema.json
+- Stripped `index.html` to a fragment (removed `<html>`, `<head>`, `<body>` wrapper tags — Homebridge injects these at runtime)
+
 ## [1.0.1] - 2026-04-19
 
 ### Fixed
