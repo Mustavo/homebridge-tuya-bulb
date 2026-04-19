@@ -1,0 +1,9 @@
+src/
+tests/
+tsconfig.json
+jest.config.js
+.env
+.DS_Store
+*.tgz
+.homebridge/
+node_modules/

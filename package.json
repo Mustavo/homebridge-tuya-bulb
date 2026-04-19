@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-tuya-bulb",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for Tuya v3.4 Color Light bulbs. Local LAN control after one-time cloud key bootstrap. No ongoing cloud dependency.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "tuya": "npx ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["homebridge-plugin","homebridge","tuya","smart-bulb","color-light","homekit","siri","local-lan"],
+  "author": "Brad Aurisch",
+  "license": "ISC",
+  "repository": {"type":"git","url":"https://github.com/Mustavo/homebridge-tuya-bulb.git"},
+  "bugs": {"url":"https://github.com/Mustavo/homebridge-tuya-bulb/issues"},
+  "engines": {"homebridge":">=1.6.0","node":">=18.0.0"},
+  "dependencies": {
+    "@homebridge/plugin-ui-utils": "^2.2.3",
+    "commander": "^12.0.0",
+    "tuyapi": "^7.7.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^22.0.0",
+    "homebridge": "^1.8.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  },
+  "homepage": "https://github.com/Mustavo/homebridge-tuya-bulb",
+  "childBridge": true
+}

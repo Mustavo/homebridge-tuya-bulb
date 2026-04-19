@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.tgz
+.homebridge/
+.env
+package-lock.json

@@ -1,0 +1,33 @@
+{
+  "pluginAlias": "TuyaBulb",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Tuya Color Light v3.4 local LAN controller. Run 'npm run tuya -- fetch-keys' or use the Bootstrap panel below to fetch device keys from the Tuya IoT Platform (once only).",
+  "schema": {
+    "type": "object",
+    "required": ["name"],
+    "properties": {
+      "name": {
+        "title": "Platform Name",
+        "type": "string",
+        "default": "Tuya Bulbs"
+      },
+      "heartbeatInterval": {
+        "title": "Heartbeat Interval (seconds)",
+        "type": "number",
+        "default": 10,
+        "minimum": 5,
+        "maximum": 60,
+        "description": "How often to ping each device to verify the connection is alive."
+      },
+      "reconnectAttempts": {
+        "title": "Reconnect Attempts",
+        "type": "number",
+        "default": 3,
+        "minimum": 1,
+        "maximum": 10,
+        "description": "How many consecutive connection failures before marking a device as unreachable in HomeKit."
+      }
+    }
+  }
+}
